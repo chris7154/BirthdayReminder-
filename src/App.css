@@ -1,38 +1,41 @@
-.App {
-  text-align: center;
+.container {
+  background-color: grey;
+  display: block;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.h3 {
+  font-weight: 100;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 45px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.list-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap; /* Allow items to wrap to the next line if the container is too narrow */
+  gap: 20px; /* Spacing between each person-container */
 }
 
-.App-link {
-  color: #61dafb;
+.person-container {
+  display: flex;
+  align-items: center; /* Align items vertically */
+  width: 300px; /* Set a fixed width for each person-container */
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin: 10px;
+  background-color: pink;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.person {
+  margin-right: 20px;
+}
+
+.person img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.descrip {
+  flex: 1; /* Allow the descrip div to take up remaining space */
 }
